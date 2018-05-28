@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <title>套图列表</title>
+        <link rel="stylesheet" href="css/swiper-4.2.6.min.css" />
+        <link rel="stylesheet" href="css/com.css" />
+    </head>
+	<body>
+		<header class="header">
+		    <a href="#" target="_blank" class="login-btn"></a>
+			<h2>套图列表</h2>
+            <span class="serch-btn"></span>
+		</header>
+		<article class="page-cnt">
+			<!--banner-start-->
+		    <div class="banner">
+			    <div class="swiper-container swiper-container-4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                        	<a href="#" target="_blank">
+                        		<img src="images/banner4.png" />
+                        	</a>
+                        </div>
+                        <div class="swiper-slide">
+                        	<a href="#" target="_blank">
+                        		<img src="images/banner2.png" />
+                        	</a>
+                        </div>
+                        <div class="swiper-slide">
+                        	<a href="#" target="_blank">
+                        		<img src="images/banner3.png" />
+                        	</a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-4"></div>
+                </div>
+		    </div>
+		    <!--banner-end-->
+		    
+		    <!--drawing-start-->
+		    <div class="drawing">
+			    <div class="drawing-title">
+			    	<span><i class="tips"></i>尤梦套图列表</span>
+			    	<a href="#" target="_blank">MORE<br />+</a>
+			    </div>
+			    <div class="drawing-adv">
+			    	<div class="row">
+			    		<a href="#"><img src="images/img-07.png"></a>
+			    		<div class="text"></div>
+			    	</div>
+			    	<div class="row"></div>
+			    </div>
+			    <div class="drawing-list"></div>
+		    </div>
+		    <!--drawing-end-->
+		    
+		</article>
+		
+		<footer class="foot">
+			<ul class="foot-list">
+				<li>
+					<a href="index.html">
+						<img src="images/home/home-icon.png" />
+					    <p>首页</p>
+					</a>
+				</li>
+				<li class="cur">
+					<a href="index.html">
+						<img src="images/home/Drawing-icon-cur.png" />
+					    <p>套图</p>
+					</a>
+				</li>
+				<li>
+					<a href="index.html">
+						<img src="images/home/single-icon.png" />
+					    <p>单图</p>
+					</a>
+				</li>
+				<li>
+					<a href="index.html">
+						<img src="images/home/special-icon.png" />
+					    <p>专题</p>
+					</a>
+				</li>
+				<li>
+					<a href="index.html">
+						<img src="images/home/APPdown-icon.png" />
+					    <p>APP下载</p>
+					</a>
+				</li>
+			</ul>
+		</footer>
+		
+		<script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/rem.js"></script>
+        <script src="js/index.js"></script>
+       <!-- banner-->
+        <script src="js/swiper-4.2.6.min.js"></script>
+ 
+ <!-- banner-->
+ <script>
+    var swiper1 = new Swiper('.swiper-container-4', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination-4',
+        clickable: true,
+      },
+    });
+    
+   </script>
+       
+	</body>
+</html>

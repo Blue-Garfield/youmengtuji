@@ -1,0 +1,259 @@
+*{ margin:0px; padding:0px; font-family:'微软雅黑'; }
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body {
+	margin: 0 auto;
+	width: 12.42rem;
+	line-height:1.8;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+a{
+	display: inline-block;
+}
+ol, ul,a,h2{
+	color: #000000;
+	text-decoration: none;
+	list-style: none;
+	font-weight: 500;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+
+/*header-start*/
+.header{
+	position:fixed;
+	top: 0;
+	z-index: 999;
+	width:12.42rem;
+	height: 1.48rem;
+	line-height: 1.48rem;
+	text-align: center;
+	background: #f05949;
+}
+.header h2{
+	font-size: 0.56rem;
+	color: #fff;
+}
+.header .login-btn{
+	position: absolute;
+	left: 0.28rem;
+	top: 0.4rem;
+	width: 0.75rem;
+	height: 0.68rem;
+	background: url(../images/login.png) no-repeat;
+	background-size:100% ;
+}
+.header .serch-warp{
+	position: absolute;
+	right: 0.28rem;
+}
+/*.header .serch-warp*/ .serch-btn{
+	position: absolute;
+	right: 0.28rem;
+	top: 0.4rem;
+	display: inline-block;
+	width: 0.6rem;
+	height: 0.62rem;
+	background: url(../images/serch-icon.png) no-repeat;
+	background-size:100% ;
+}
+/*header-end*/
+
+
+/*footer-start*/
+.foot{margin: 0 auto;width: 100%; overflow: hidden;}
+.foot .foot-list{position:fixed;bottom:0;padding:0.2rem 0.28rem 0.6rem;display:flex;justify-content:space-between;background: #fff;border-top:0.24rem solid #efefef;}
+.foot .foot-list li{display: inline-block;width:2.372rem;text-align: center;}
+.foot .foot-list li a{display: inline-block;}
+.foot .foot-list li p{font-size: 0.48rem;color: #6f6f6f;text-align: center;line-height: 1;}
+.foot .foot-list .cur p{color:#c63b5a;}
+.foot .foot-list img{width:0.82rem;}
+.foot .foot-list li:last-child img{width:0.52rem;}
+/*footer-end*/
+
+/*cnt-start*/
+.page-cnt{
+	padding: 1.48rem 0 3.68rem;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+/*cnt-end*/
+
+/*banner-start*/
+.swiper-container-1{
+	height: 4.7rem;
+}
+.swiper-slide a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide a img{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.swiper-pagination-bullet-active{
+	background:#c63b5a!important;
+	outline: none;
+}
+/*banner-end*/
+
+
+/*tab-bar-start*/
+.bor{
+	border-right: solid 1px #c2c2c2;
+}
+.tab-bar{
+	border-bottom: 0.12rem solid #efefef;
+	height: 8.84rem;
+	overflow: hidden;
+}
+.tab-header{
+	width: 100%;
+    height:1.06rem;
+    background:#f2f2f2;
+}
+.tab-header ul{
+	padding: 0.25rem 0; 
+    width: 100%;
+    height:0.62rem;
+    line-height:0.62rem;
+    display: flex;
+    justify-content: space-between;
+}
+.tab-header ul li{
+    width: 50%;
+    font-size: 0.48rem;
+    text-align: center;
+    cursor: pointer;
+}
+.current{
+	color: #c63b5a;
+}
+.current .hot-ico{
+	margin: 0 0.2rem;
+	display:inline-block;
+	width: 0.49rem;
+	height: 0.67rem;
+	background: url(../images/hot-icon.png) no-repeat center center;
+	background-size:100% ;
+	vertical-align: middle;
+}
+.tab-content{
+	padding:0 0.28rem;
+	height: 7.8rem;
+}
+.tab-content .tab-item{
+	height: 7.8rem;
+}
+.swiper-container-2{
+	height: 7.8rem;
+}
+.swiper-wrapper-2{
+	display: flex;
+    justify-content: space-between;
+}
+.pic-list{
+	position: relative;
+	width: 3.88rem;
+	height: 5.89rem;
+}
+.pic-list a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+ /*.pic-list a img{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}*/
+ .pic-list .pic-text{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 33;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 0.38rem;
+	color: #fff;
+	background: rgba(0,0,0,0.4);
+	display: none;
+}
+ .pic-title{
+	text-align: center;
+	font-size: 0.42rem;
+	color: #000;
+}
+.swiper-container-3 {
+    height: 7.8rem;
+}
+.swiper-wrapper-3{
+	display: flex;
+    justify-content: space-between;
+}
+
+/*tab-bar-end*/
+
+/*hot-pic-start*/
+.hot-pic{padding: 0 0.28rem;}
+.hot-pic .hot-title{position: relative;padding: 0.5rem 0;height: 1rem;}
+.hot-pic .hot-title .tit{position: absolute;left: 0; font-size: 0.52rem;}
+.hot-pic .hot-title .tit span:last-child{display: inline-block;font-size: 0.28rem;background: url(../images/tip.png) no-repeat top left;background-size:30% ;}
+.hot-pic .hot-title .refresh{position: absolute;right: 0;font-size: 0.52rem;}
+.hot-pic .hot-title .refresh .refresh-btn{display: inline-block;width: 0.62rem;height: 0.62rem;background: url(../images/refresh-icon.png) no-repeat;background-size:100%;vertical-align: middle;}
+.hot-pic .hot-list li{position:relative;margin-bottom:0.4rem;display: inline-block;width:5.84rem;height: 8.26rem;float: left;margin-right: 0.18rem;}
+.hot-pic .hot-list li:nth-child(2n){margin-right: 0;}
+.hot-pic .hot-list li a{display: inline-block;width: 5.84rem;height: 8.26rem;}
+.hot-pic .hot-list li a img{display: inline-block;width:100%;height: 100%;} 
+.hot-pic .hot-list li .hot-text{position: absolute;bottom: 0;padding:0.48rem 0.12rem;width:5.6rem;font-size: 0.4rem; color: #fff;background: rgba(0,0,0,0.5);}
+/*hot-pic-end*/
+
+/*drawing-start*/
+.swiper-container-4{height: 5.12rem;}
+.swiper-pagination-4{text-align: right!important;}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{left: -20px;}
+.swiper-pagination-4 .swiper-pagination-bullet{
+	width: 0.26rem;
+	height: 0.26rem;
+	border: 0.03rem solid #c63b5a;
+	border-radius:50%;
+	background:none;
+	opacity: 1;
+	box-sizing: border-box;
+}
+.drawing{padding: 0 0.28rem;border-top:0.14rem solid #eceaea;}
+.drawing .drawing-title{position:relative;padding:0.4rem 0;border-bottom:0.02rem solid #b3afaf;height:0.84rem;line-height:0.84rem;font-size: 0.48rem;color: #c63b5a;}
+.drawing .drawing-title span{position: absolute;left: 0;top: 0.5rem;}
+.drawing .drawing-title .tips{vertical-align:-4px;margin-right:0.2rem;display:inline-block;width: 0.24rem;height: 0.65rem;background: url(../images/msg.png) no-repeat left center;background-size:100% ;}
+.drawing .drawing-title a{position: absolute;right: 0;top:0.2rem;line-height:1;text-align:center;padding:0.2rem 0.3rem;font-size: 0.3rem;color: #fff;background: #c63b5a;}
+/*drawing-end*/
